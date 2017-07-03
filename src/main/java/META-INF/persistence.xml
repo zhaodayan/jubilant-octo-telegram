@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+            http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+            
+    <persistence-unit name="enite" transaction-type="RESOURCE_LOCAL">
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+            <property name="hibernate.connection.driver_class" value="org.gjt.mm.mysql.Driver" />
+            <property name="hibernate.connection.username" value="root" />
+            <property name="hibernate.connection.password" value="1" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1:3306/enite?useUnicode=true&amp;characterEncoding=UTF-8" />
+            <property name="hibernate.max_fetch_depth" value="3" />
+            <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            
+            <property name="hibernate.show_sql" value="false" />
+		    <property name="hibernate.format_sql" value="false"/> 
+		    
+			<!-- hibernate的c3p0连接池配置（需要jar包：c3p0-0.9.0.4.jar） -->    
+			<property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider"/>    
+			<!-- 最小连接数 -->    
+			<property name="c3p0.min_size" value="5"/>     
+			<!-- 最大连接数 -->     
+			 <property name="c3p0.max_size" value="30"/>    
+			<!--最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->     
+			<property name="c3p0.maxIdleTime" value="60"/>    
+			<!-- 获得连接的超时时间,如果超过这个时间,会抛出异常，单位毫秒 -->    
+			<property name="c3p0.timeout" value="1800"/>     
+			<!-- 最大的PreparedStatement的数量 -->    
+			<property name="c3p0.max_statements" value="50"/>    
+			<!-- 每隔120秒检查连接池里的空闲连接 ，单位是秒-->    
+			<property name="c3p0.idle_test_period" value="120"/>      
+			<!-- 当连接池里面的连接用完的时候，C3P0一下获取的新的连接数 -->    
+			<property name="c3p0.acquire_increment" value="1"/>    
+			<!-- 是否每次都验证连接是否可用 -->    
+			<property name="c3p0.validate" value="false"/>      
+        </properties>
+    </persistence-unit>
+
+</persistence>

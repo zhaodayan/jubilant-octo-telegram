@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message id="base.path">/enite</message>
+	<message id="base.picpath">D:\enite\pic</message>
+	<message id="base.filepath">D:\enite\doc</message>
+	<message id="www.pic">/img</message>
+	<message id="www.file">/attach</message>
+	
+<message id="setting">设置</message>	
+<message id="logOut">退出登录</message>	
+<message id="pswdReset">修改密码</message>
+<message id="input key word">输入货品关键字</message>
+<message id="search">搜索</message>
+<message id="there is no goods">尚没有货品记录在库存盘点中</message>
+<message id="noActivatedWO">暂时没有活动中的工单</message>
+<message id="export">导出</message>
+<message id="filter">login_page</message>
+<message id="wrong username">用户名错误</message>	
+<message id="wrong password">密码错误</message>
+<message id="mismatch username and pwd">用户名和密码不匹配</message>
+<message id="permission">权限</message>
+<message id="create">新建</message>
+<message id="edit">编辑</message>
+<message id="delete">删除</message>
+<message id="view">查看</message>
+<message id="filtrate">筛选</message>
+<message id="display">显示</message>
+<message id="displayAll">显示全部</message>
+<message id="hide">隐藏</message>
+<message id="finish">完结</message>
+<message id="return">返回</message>
+<message id="in_store">新建入库</message>
+<message id="out_store">新建出库</message>
+<message id="usedc">启用数据码</message>
+<message id="vdetail">查看明细</message>
+<message id="edetail">编辑明细</message>
+<message id="wf.dosel">请选择</message>
+<message id="save">保存</message>
+<message id="cancel">取消</message>
+<message id="reset">重置</message>
+<message id="query">查询</message>
+<message id="wrongPreviousPwd">原密码输入错误</message>
+<message id="inputMust">不能为空</message>
+<message id="inconsistentInput">两次密码输入不一致</message>
+<message id="defaultPwd">111111</message>
+<message id="usernameused">用户名已存在</message>
+<message id="datacodeused">数据码已存在</message>
+<message id="summation">合计</message>
+<message id="Information Please">提示信息</message>
+<message id="addInv">添加</message>
+<message id="delegatemark">
+1,aaaaaaaa
+2,bbbbbbbbb
+3,cccccc
+4,...
+</message>
+<message id="inputmust">必填</message>
+<message id="is null">不能为空</message>
+<message id="too small">低于下限值</message>
+<message id="too large">高于上限值</message>
+<message id="badform">格式不正确</message>
+<message id="start date lthan end date">开始日期大于结束日期</message>
+<message id="date overlap">时间段重叠</message>
+<message id="address">昆山周市镇新纬路119-7#</message>
+<message id="mylinkman">钟旭光</message>
+<message id="myfax">1234567</message>
+<message id="mylinktel">13939399999</message>
+<message id="corptitle">昆山亿业嘉精密机械有限公司</message>
+<message id="corpaddr">昆山市新镇新纬路119-7#</message>
+<message id="goodstitle">兹向贵公司（工厂）订购下列货品，敬请按下列议定条件，请签名确认回传</message>
+<message id="remark1">一、交货地点：昆山市新镇新纬路119-7#</message>
+<message id="remark2">二、检验标准：按图纸要求</message>
+<message id="remark3">三、质量要求：按双方所订技术协议，质保协议及认定样品执</message>
+<message id="remark4">四、结算方式：月结60天</message>
+<message id="remark5">五、迟延交货处理：每迟交一天，扣总价款0.5%</message>
+<message id="remark6">六、包装：纸箱、胶袋，送货时请在送货单上注明合同号及订单出厂日期及送货单位</message>
+<message id="remark7">七、索赔条款：供方如有质量问题，要及时派技术人员到需方解</message>
+<message id="remark8">     齐坏料，否则因此引起需方的所有经济损失将由供方负责赔，</message>
+<message id="remark9">     即时扣除，坏料供方自理。</message>
+<message id="remark10">八、其它：</message>
+<message id="remark11">1、贵公司收本契约书后请速签回，如有异议请于24小时内提</message>
+<message id="remark12">2、本约有任何更改，必须以书面形式，并以本公司经理同意并盖</message>
+<message id="remark13">3、发票上需注明订单号码和发货日期。</message>
+<message id="remark14">4、如有纠纷或其它未尽事宜，双方协商解决。</message>       
+
+<message id="user-name-info">输入用户名</message>
+<message id="reguser-name-info">输入用户名,不少于2个字符</message>
+<message id="user-name-invalid">用户名无效</message>
+<message id="confirm-is-you">用户名已存在，确认是你吗?</message>
+<message id="user-password-info">输入密码</message>
+<message id="reguser-password-info">输入密码,不少于8个字符</message>
+<message id="user-password-invalid">用户密码无效</message>
+<message id="repeat-password-info">再次输入密码</message>
+<message id="pre-password-info">输入原密码</message>
+<message id="user-name-tooshort">最少 {1} 位字符</message>
+<message id="non-alphanumeric">非字母和数字</message>
+<message id="uppercase">字母</message>
+<message id="digit">数字</message>
+<message id="optional-email-info">输入邮箱地址 (可选)</message>
+
+<message id="filter"></message>
+<!-- 托工单 -->
+<message id="authorizermk">
+以上价格含 17%增值税
+付款条件：1.请于当月18日FAX对账单，待确认后于当月25日将发票送至本公司.
+2.月结60天
+备注：1.本订单2日内未签回视同放弃
+    2. 如因交货延期，规格不符或品质不良，造成本公司之损失，卖法应负赔偿责任，货品虽经本公
+    验收，但因品质不良司验不良致使货品遭到客户退货或赔偿时，卖方也应付赔偿责任，而不得异议。
+    3.卖法未能依限时履行合约时，买方有权取消订单，卖方不得异议。
+    4，交货时请附送货单与品检报告。
+    5.如有纠纷或其他未尽事宜，双方协商解决。                        
+</message>
+
+<message id=""><!-- 下料单采购 -->
+注：1：注意公差+0.1/-0.1 2：超过公差范围做退货处理 3：全周倒角1C 4：正角小于等于15条
+价格协议:   1.精板7.5/KG,加工费18元/件。光板7.0元/KG,加工费10元/件，毛料6.0元/KG
+付款条件：        1，请于当月18日FAX对账单，待确认后于当月25日将发票送至本公司.
+         2.月结60天
+备注：1.本订单2日内未签回视同放弃
+    2. 如因交货延期，规格不符或品质不良，造成本公司之损失，卖法应负赔偿责任，货品虽经本公验收，但因品质不良
+            致使货品遭到客户退货或赔偿时，卖方也应付赔偿责任，而不得异议。
+    3.卖法未能依限时履行合约时，买方有权取消订单，卖方不得异议。
+    4，交货时请附送货单与品检报告。
+    5.如有纠纷或其他未尽事宜，双方协商解决。
+    2.月结60天
+    4.交货时请附送货单与品检报告.
+    5.如有纠纷或其他未尽事宜，双方协商解决。                        
+</message>
+
+<message id=""><!-- 一般采购 -->
+                以上价格含3%增值税
+一，交货地点：昆山市新镇新纬路119-7#
+二、校验标准：按图纸要求
+三、质量要求：按双方所订技术协议，质保协议及认定样品执行，产品实行“三包”
+四、结算方式：月结60天
+五、迟延交货处理：每迟交一天，扣总价款0.5%。
+六、包装：纸箱、胶袋，送货时请在送货单上注明合同号及订单号码，外包装上注明出厂日期及送货单位。
+七、索赔条款：供方如有质量问题，要及时派技术人员到需方解决，以坏换好，尽快补齐材料，否则因此引起需方的所有经济损失将由供方负责赔偿，此批坏料的贷款
+即时扣除，坏料供方自理。
+八、其它：
+1、贵公司收本契约书后请速签回，如有异议请于24小时内提出，否则视同接单；
+2、本约有任何更改，必须以书面形式、并以本公司经理同意并盖上公章，不得更改。
+3、发票上需注明订单号码和发货日期。
+4、如有纠纷或其它未尽事宜，双方协商解决。
+</message>
+
+<message id=""><!-- 按公斤材质算法 -->
+以上价格含17%增值税
+注： 58~62度，深冷加安定化
+付款条件：        1，请于当月18日FAX对账单，待确认后于当月25日将发票送至本公司.
+         2.月结60天
+ 备       注：1.本订单2日内未签回视同放弃
+       2. 如因交货延期，规格不符或品质不良，造成本公司之损失，卖法应负赔偿责任，货品虽经本公验收，但因品质不良
+                   致使货品遭到客户退货或赔偿时，卖方也应付赔偿责任，而不得异议。
+      3.卖法未能依限时履行合约时，买方有权取消订单，卖方不得异议。
+      4，交货时请附送货单与品检报告。
+      5.如有纠纷或其他未尽事宜，双方协商解决。
+</message>
+
+</messages>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<messages>
+<message id="index_page">
+${cn.mazu.widget.SlideDown_draw a}
+${cn.mazu.widget.TabHead_draw a}
+${cn.mazu.widget.NavgationBox_draw a}
+</message>
+<message id="purchase-form">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>订单号码：</label>${orderno-field}<div class="nulltxttip">${orderno-field-info}</div></li>
+	<li><label>订单日期：</label>${orderdate-field}*<div class="nulltxttip">${orderdate-field-info}</div></li>
+	<li><label>工单号：</label>${worder-field}*<div class="nulltxttip">${worder-field-info}</div></li>
+	<li><label>合同类型：</label>${type-field}*<div class="nulltxttip">${type-field-info}</div></li>
+	<li><label>合同状态：</label>${typeStatus-field}*<div class="nulltxttip">${typeStatus-field-info}</div></li>
+	<li class="spancol"><label>工艺：</label>${tech-field}</li>
+	<li><label>地址：</label>${address-field}*<div class="nulltxttip">${address-field-info}</div></li>
+	<li><label>我方联系人：</label>${mylinkman-field}*<div class="nulltxttip">${mylinkman-field-info}</div></li>
+	<li><label>我方联系电话：</label>${mytel-field}*<div class="nulltxttip">${mytel-field-info}</div></li>
+	<li><label>我方传真：</label>${myfax-field}*<div class="nulltxttip">${myfax-field-info}</div></li>
+	<li><label>供方名称：</label>${supplier-field}*<div class="nulltxttip">${supplier-field-info}</div></li>
+	<li><label>供方联系人：</label>${slinkman-field}*<div class="nulltxttip">${slinkman-field-info}</div></li>
+	<li><label>供方电话：</label>${stel-field}*<div class="nulltxttip">${stel-field-info}</div></li>
+	<li><label>供方传真：</label>${sfax-field}*<div class="nulltxttip">${sfax-field-info}</div></li>
+	<div style="clear:both;"></div>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="generalelement-form">
+<div class="tcontainer">
+<table class="form_tb">
+<tr><td>零件编码：</td><td>${code-field}*<div class="nulltxttip">${code-field-info}</div></td>
+	<td>零件名称：</td><td>${name-field}*<div class="nulltxttip">${name-field-info}</div></td></tr>
+<tr><td>加工周期：</td>
+	<td>${period-field}*<div class="nulltxttip">${period-field-info}</div></td>
+	<td>加工工艺：</td><td>${tech-field}*<div class="nulltxttip">${tech-field-info}</div></td></tr>
+</table>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+
+<message id="client-form">
+<div class="tcontainer">
+<ul class="form_ul">
+    <li><label>客户名称：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div></li>
+	<li><label>联系人：</label>${linkman-field}</li>
+	<li><label>固定电话：</label>${linktel-field}</li>
+	<li><label>手机：</label>${linkphone-field}</li>
+	<li><label>传真：</label>${linkfax-field}</li>
+	<li><label>e-mail：</label>${email-field}</li>
+	<li><label>网址：</label>${siteAddr-field}</li>
+	
+	<li><label>联系地址：</label>${addr-field}</li>
+	<li><label>邮政编码：</label>${addrCode-field}</li>
+	<li><label>开户银行：</label>${linkBank-field}</li>
+	<li><label>银行账号：</label>${lbankNO-field}</li>
+	<li><label>上传附件：</label>${addition-field}</li>
+	<li><label>客户描述：</label>${description-field}</li>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="staff-form">
+<div class="tcontainer">
+<ul class="form_ul">
+    <li><label>员工姓名：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div></li>
+	<li><label>部门：</label>${dept-field}*<div class="nulltxttip" style="right: 70px;">${dept-field-info}</div></li>
+	<li><label>出生日期：</label>${birthDate-field}*<div class="nulltxttip">${birthDate-field-info}</div></li>
+	<li><label>进厂时间：</label>${joinDate-field}*<div class="nulltxttip">${joinDate-field-info}</div></li>
+	<li><label>身份证号码：</label>${nationID-field}*<div class="nulltxttip">${nationID-field-info}</div></li>
+	<li><label>籍贯：</label>${nativePlace-field}*<div class="nulltxttip">${nativePlace-field-info}</div></li>
+	<li><label>性别：</label>${gender-field}*<div class="nulltxttip" style="right: 70px;">${gender-field-info}</div></li>
+	<li><label>学历：</label>${education-field}*<div class="nulltxttip">${education-field-info}</div></li>
+	<li><label>联系电话：</label>${linktel-field}*<div class="nulltxttip">${linktel-field-info}</div></li>
+	<li><label>联系邮箱：</label>${email-field}</li>
+	<li><label>员工描述：</label>${remark-field}*<div class="nulltxttip">${remark-field-info}</div></li>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="dept-form">
+<div class="tcontainer">
+<table class="form_tb">
+<tr><td><label>名称：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div></td><td></td>
+	<td><label>编号：</label>${code-field}*<div class="nulltxttip">${code-field-info}</div></td><td></td></tr>
+<tr><td><label>父级部门名称：</label>${pdept-field}*</td><td></td>
+	<td></td><td></td>
+</tr>
+</table>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="supplier-form">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>供货商名称：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div></li>
+	<li><label>联系人：</label>${linkman-field}*<div class="nulltxttip">${linkman-field-info}</div></li>
+	<li><label>电话：</label>${linktel-field}*<div class="nulltxttip">${linktel-field-info}</div></li>
+	<li><label>传真：</label>${fax-field}</li>
+	<li><label>邮箱：</label>${email-field}</li>
+	<li><label>上传附件：</label>${addition-field}</li>
+	<li><label>供货商描述：</label>${desc-field}</li>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="flow-form">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>名称：</label>${name-field}</li>
+	<li><label>开始时间：</label>${startd-field}</li>
+	<li><label>结束时间：</label>${endd-field}</li>
+	<li><label>描述：</label>${describe-field}</li>
+	<div style="clear:both;"></div>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+<message id="form-link">
+<div class="wrap">
+<h3>联系我们</h3>
+<table class="linktbl">
+	<tr><td class="ta">联系地址：</td><td class="td">${link-addr}<div class="nulltxttip">${link-addr-info}</div></td></tr>
+	<tr><td class="ta">电话：</td><td class="td">${link-tele}<div class="nulltxttip">${link-tele-info}</div></td></tr>
+	<tr><td class="ta">传真：</td><td class="td">${link-fax}<div class="nulltxttip">${link-fax-info}</div></td></tr>
+	<tr><td class="ta">联系人：</td><td class="td">${link-man}<div class="nulltxttip">${link-man-info}</div></td></tr>
+	<tr><td class="ta">手机号码：</td><td class="td">${link-QQ}<div class="nulltxttip">${link-QQ-info}</div></td></tr>
+	<tr><td class="ta">邮箱：</td><td class="td">${link-email}<div class="nulltxttip">${link-email-info}</div></td></tr>
+	<tr><td class="ta">网址：</td><td class="td">${link-site}<div class="nulltxttip">${link-site-info}</div></td></tr>
+	<tr><td class="ta"></td><td class="td">${savebtn}</td></tr>
+</table>
+</div>
+</message>
+<message id="form-notice">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>标题：</label>${notitle}<div class="nulltxttip">${notitle-info}</div></li>
+	<li><label>分类：</label>${notype}<div class="nulltxttip">${notype-info}</div></li>
+	<li><label>发布时间：</label>${nodate}<div class="nulltxttip">${nodate-info}</div></li>
+	<li class='spancol'><label>内容：</label>${nocontent}<div class="nulltxttip">${nocontent-info}</div></li>
+	<div style="clear:both;"></div>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="form-quoLib">
+<table class="detailtb quotbl">
+<thead><th>名称</th><th>生产周期</th><th>单位价格</th></thead>
+<tbody>
+<tr><td>模块</td><td>${modcyc}<div class="nulltxttip">${modcyc-info}</div></td>
+	<td>${modprice}<div class="nulltxttip">${modprice-info}</div></td></tr>
+<tr><td>模座</td><td>${mobcyc}<div class="nulltxttip">${mobcyc-info}</div></td>
+	<td>${mobprice}<div class="nulltxttip">${mobprice-info}</div></td></tr>
+<tr><td>镶条</td><td>${mxtcyc}<div class="nulltxttip">${mxtcyc-info}</div></td>
+	<td>${mxtprice}<div class="nulltxttip">${mxtprice-info}</div></td></tr>
+<tr><td>带球</td><td>${mdqcyc}<div class="nulltxttip">${mdqcyc-info}</div></td>
+	<td>${mdqprice}<div class="nulltxttip">${mdqprice-info}</div></td></tr>
+<tr><td colspan="3">${savebtn}</td></tr>
+</tbody>
+</table>
+</message>
+
+<message id="form-quot">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>模具类型：</label>${modType}</li>
+	<li><label>模块数量：</label>${modNum}</li>
+	<li><label>模座数量：</label>${mobNum}</li>
+	<li><label>镶条数量：</label>${mxtNum}</li>
+	<li><label>带球数量：</label>${mdqNum}</li>
+	<li><label>预计完成时间：</label>${timeEst}</li>
+	<li><label>预计费用：</label>${costEst}</li>
+	<li><label>客户名称：</label>${clink}</li>
+	<li><label>联系电话：</label>${ctele}</li>
+	<li><label>联系人：</label>${clink}</li>
+	<li><label>邮箱：</label>${cemail}</li>
+	<li><label>联系地址：</label>${caddr}</li>
+	<div style="clear:both;"></div>
+</ul>
+</div>
+<div class="box_button">${close}</div>
+</message>
+<message id="form-cslt">
+<div class="tcontainer">
+<table class="form_tb">							
+	<tr>
+        <td >标　　题：</td><td> ${title}</td>
+        <td>姓　　名：</td><td>${name}</td>
+      </tr>
+      <tr>            
+        <td>地　　址：</td> <td>${addr}</td>
+        <td>单　　位：</td><td>${company}</td>
+      </tr>
+      <tr>
+        <td>电　　邮：</td><td>${email}</td>
+        <td>电　　话：</td><td>${tele}</td>
+      </tr>
+      <tr>
+        <td>传　　真：</td><td>${fax}</td>
+       <td>内　　容:</td>
+        <td>${content}</td>
+      </tr>
+</table>
+</div>
+<div class="box_button">${close}</div>
+</message>
+<message id="form-repair">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>申请人：</label>${applicant}</li>
+	<li><label>产品名称：</label>${product-name}</li>
+	<li><label>申请日期：</label>${apply-date}</li>
+	<li><label>需求完成日期：</label>${complete-date}</li>
+	<li><label>产品编号：</label>${product-num}</li>
+	<li><label>生产原料名称：</label>${material-name}</li>
+	<li><label>模具名称：</label>${module-name}</li>
+	<li><label>模具编号：</label>${module-num}</li>
+	<li><label>修理原因：</label>${repair-cause}</li>
+	<li><label>其他要求：</label>${other-request}</li>
+	<div style="clear:both;"></div>
+</ul>
+</div>
+<div class="box_button">${close}</div>
+</message>
+<message id="form-prodct">
+<div class="tcontainer">
+<table class="form_tb">							
+	<tr>
+       <td>名称：</td><td>${pname}<div class="nulltxttip">${pname-info}</div></td> 
+       <td>快速报价：</td><td>${pRapid}<div class="nulltxttip">${pRapid-info}</div></td>
+      
+     </tr>
+     <tr>     
+       <td rowspan="2">简介：</td><td rowspan="2">${pintro}<div class="nulltxttip">${pintro-info}</div></td>
+        <td rowspan="2">上传图片：</td><td rowspan="2">${imgupload}</td>      
+     </tr>
+</table>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+<message id="form-device">
+<div class="tcontainer">
+<table class="form_tb">							
+	<tr>
+       <td>名称：</td><td>${dname}<div class="nulltxttip">${dname-info}</div></td>
+       <td rowspan="2">上传图片：</td><td rowspan="2">${imgupload}</td>
+     </tr>
+     <tr>
+       <td>简介：</td><td>${dintro}<div class="nulltxttip">${dintro-info}</div></td>
+     </tr>
+</table>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+    
+
+<message id="inventoryi-form">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>货品名称：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div></li>
+	<li><label>盘点日期：</label>${cdate-field}*<div class="nulltxttip">${cdate-field-info}</div></li>
+	<li><label>初始数量：</label>${num-field}*<div class="nulltxttip">${num-field-info}</div></li>
+	<li><label>货品规格：</label>${spec-field}*<div class="nulltxttip">${spec-field-info}</div></li>
+	<li><label>货品编号：</label>${code-field}*<div class="nulltxttip">${code-field-info}</div></li>
+	<li><label>预警值：</label>${threshold-field}*<div class="nulltxttip">${threshold-field-info}</div></li>
+	<li><label>计量单位：</label>${unit-field}*<div class="nulltxttip">${unit-field-info}</div></li>
+	<li><label>供货商：</label>${supplier-field}*<div class="nulltxttip">${supplier-field-info}</div></li>
+	<!-- <li><label>仓别：</label>${sc-field}*<div class="nulltxttip">${sc-field-info}</div></li> -->
+	<li><label>材质：</label>${texture-field}*<div class="nulltxttip">${texture-field-info}</div></li>
+	<div style="clear:both;"></div>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="inventoryb-form">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>数量：</label>${count-field}*<div class="nulltxttip">${count-field-info}</div></li>
+	<li><label>来往日期:</label>${bdate-field}*<div class="nulltxttip">${bdate-field-info}</div></li>
+	<li><label>仓别：</label>${sc-field}*<div class="nulltxttip">${sc-field-info}</div></li>
+	<li class='spancol'><label>选择货品：</label>${inventory-field}<div class="nulltxttip">${inventory-field-info}</div></li>
+	<li><label>名称：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div></li>
+	<li><label>货品规格：</label>${spec-field}*<div class="nulltxttip">${spec-field-info}</div></li>
+	<li><label>货品编号：</label>${code-field}*<div class="nulltxttip">${code-field-info}</div></li>
+	${<if:isout>}
+	  <li class='spancol'><label>选择销售单：</label>${worder-field}<div class="nulltxttip">${worder-field-info}</div></li>
+	${</if:isout>}
+	
+	${<if:isin>}
+	  <li class='spancol'><label>选择订购单：</label>${signdoc-field}<div class="nulltxttip">${signdoc-field-info}</div></li>
+	${</if:isin>}
+	<div style="clear:both;"></div>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<!-- 库存往来修改表单 -->
+<message id="inventoryb-editf">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>数量：</label>${count-field}*<div class="nulltxttip">${count-field-info}</div></li>
+	<li><label>来往日期:</label>${bdate-field}*<div class="nulltxttip">${bdate-field-info}</div></li>
+	<li><label>仓别：</label>${sc-field}*<div class="nulltxttip">${sc-field-info}</div></li>
+	<li><label>工单号：</label>${worder-field}*<div class="nulltxttip">${worder-field-info}</div></li>
+	<li><label>货品名称：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div></li>
+	<li><label>货品规格：</label>${spec-field}*<div class="nulltxttip">${spec-field-info}</div></li>
+	<li><label>货品编号：</label>${code-field}*<div class="nulltxttip">${code-field-info}</div></li>
+	<div style="clear:both;"></div>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="workorder-form">
+<div class="tcontainer">
+<ul class="form_ul">
+	<li><label>工单号：</label>${orderno-field}*<div class="nulltxttip">${orderno-field-info}</div></li>
+	<li><label>品名：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div></li>
+	<li><label>客户：</label>${corpname-field}*<div class="nulltxttip">${corpname-field-info}</div></li>
+	<li><label>数量：</label>${amt-field}*<div class="nulltxttip">${amt-field-info}</div></li>
+	<li><label>客户交期：</label>${deliveryd-field}*<div class="nulltxttip">${deliveryd-field-info}</div></li>
+	<li><label>下单日期：</label>${orderd-field}*<div class="nulltxttip">${orderd-field-info}</div></li>
+	<li><label>预计交期：</label>${predictd-field}*<div class="nulltxttip">${predictd-field-info}</div></li>
+	<li><label>实际交期：</label>${reald-field}*<div class="nulltxttip">${reald-field-info}</div></li>
+	<li><label>出货日期：</label>${shipd-field}*<div class="nulltxttip">${shipd-field-info}</div></li>
+	<li><label>图面：</label>${surface-field}</li>
+	<li><label>合同附件：</label>${additionC-field}</li>
+	<li><label>技术附件：</label>${additionT-field}</li>
+	<li><label>备注：</label>${remark-field}</li>
+	<div style="clear:both;"></div>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="drawing-form">
+<div class="tcontainer">
+<table class="form_tb">
+<tr>
+<!-- <td><label>名称：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div>
+	</td><td></td>
+ -->	
+	<td colspan="2"><label>选择零件：</label>${element-field}*<div class="nulltxttip">${element-field-info}</div></td>
+	
+</tr>
+<tr>
+<!-- <td><label>上传图纸：</label>${drawing-field}*</td><td></td> -->
+	<td><label>选择图面：</label>${surface-field}*<div class="nulltxttip">${surface-field-info}</div></td>
+	<td><label>图号或规格：</label>${code-field}*<div class="nulltxttip">${code-field-info}</div></td>
+</tr>
+<tr>
+<td><label>作者：</label>${author-field}*<div class="nulltxttip">${author-field-info}</div></td>
+<td><label>上传图纸：</label>${drawing-field}*</td><td></td>
+</tr>
+</table>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="surface-form">
+<div class="tcontainer">
+<table class="form_tb">
+<tr>
+	<td><label>名称：</label>${name-field}*<div class="nulltxttip">${name-field-info}</div></td>
+    <td><label>工单：</label>${wo-field}${wo-field-info}</td>
+</tr>
+<tr>
+	<td><label>复制图面：</label>${copy-field}${copy-field-info}</td>
+	<td><label>公司名称：</label>${cname-field}*<div class="nulltxttip">${cname-field-info}</div></td>
+</tr>
+<tr>
+	<td><label>图号：</label>${code-field}*<div class="nulltxttip">${code-field-info}</div></td>
+	<td><label>制表：</label>${chart-field}*<div class="nulltxttip">${chart-field-info}</div></td>
+</tr>
+<tr>
+	<td><label>检查：</label>${check-field}*<div class="nulltxttip">${check-field-info}</div></td>
+	<td><label>核准：</label>${approval-field}*<div class="nulltxttip">${approval-field-info}</div></td>
+    </tr>
+</table>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+<message id="costconf-form">
+<div class="tcontainer">
+<ul class="form_ul">
+<li><label>铣床成本：</label>${xcc-field}*<div class="nulltxttip">${xcc-field-info}</div></li>
+<li><label>磨床成本：</label>${mcc-field}*<div class="nulltxttip">${mcc-field-info}</div></li>
+<li><label>放电成本：</label>${fdc-field}*<div class="nulltxttip">${fdc-field-info}</div></li>
+<li><label>cnc成本：</label>${cncc-field}*<div class="nulltxttip">${cncc-field-info}</div></li>
+<li><label>有效期始：</label>${startd-field}*<div class="nulltxttip">${startd-field-info}</div></li>
+<li><label>有效期止：</label>${endd-field}*<div class="nulltxttip">${endd-field-info}${busiinfo}</div></li>
+<!-- <li class="nulltxttip">${busiinfo}</li> -->
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+
+<message id="ap-form">
+<div class="tcontainer">
+<ul class="form_ul">
+<li><label>用户名：</label>${username-field}*<div class="nulltxttip">${username-field-info}</div></li>
+<!-- <li><label>密码：</label>${pwd-field}*<div class="nulltxttip">${pwd-field-info}</div></li> -->
+<li><label>员工：</label>${staff-field}*</li>
+<li><label>数据码：</label>${dc-field}*<div class="nulltxttip">${dc-field-info}</div></li>
+<li><label>菜单权限：</label>${mp-field}*<div class="nulltxttip">${mp-field-info}</div></li>
+</ul>
+</div>
+<div class="box_button">${submit}${close}</div>
+</message>
+<message id="login_page">
+<div class="logbody">
+	<div class="logtitle"><img src="/enite/images/logtitle.png" width="455" height="35" /></div>
+    <div class="logbox">
+       ${cn.mazu.auth.mvc.LoginView_draw login_form}
+    </div>
+</div>
+</message>
+<message id="login_form">
+ <table>
+ <!-- ${<if:user-name>} -->
+      <tr><td><label>账 号</label>${user-name}<div class="nulltxttip">${user-name-info}</div></td></tr>
+ <!-- ${</if:user-name>} -->
+ <!-- ${<if:user-password>} -->     
+      <tr><td><label>密 码</label>${user-password}<div class="nulltxttip">${user-password-info}</div></td></tr>
+<!-- ${</if:user-password>} -->
+<!-- ${<if:remember-me>}
+      <tr><td><label></label>${remember-me}记住登录状态</td></tr>
+${</if:remember-me>} -->
+      <tr><td><!-- <button class="editcls btn-warning logbtn">进入系统</button> -->${auth-login}</td></tr>	
+</table>
+</message>
+<message id="help_page">
+<div style="position:relative;margin:0px auto;">
+<!-- <a href="${base.path}/app/index_page" style="color:#fff;position:absolute;top:15px;left:15px;font-size:16px;"><h2>退回系统</h2></a> -->
+<iframe src="${base.path}/enitesys.htm" frameBorder="0" 
+style="width:1100px;height:700px;overflow-y:scroll;margin:10px auto auto 100px;background-color:#fff;padding:5px;border: 5px solid #f1f2f3;box-shadow:5px 4px 3px rgba(0,0,0,0.2);border-radius:5px;"></iframe>
+</div>
+</message>
+</messages>

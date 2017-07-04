@@ -1,0 +1,140 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+//apply plugin: 'jetty'
+ 
+// JDK 7
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+tasks.withType(JavaCompile) { options.encoding = "UTF-8" }
+configurations.all {
+	resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+webAppDirName = 'WebContent'
+repositories {
+    mavenLocal()
+    //mavenCentral()
+   maven {
+           url "http://www.smallelf.net/nexus/content/groups/public"
+    }
+}
+eclipse {
+    wtp {
+        facet {            
+            facet name: 'wst.jsdt.web'
+            facet name: 'java', version: '1.7'
+            facet name: 'jst.web', version: '3.0'
+            facet name: 'wst.jsdt.web', version: '1.0'
+        }
+    }
+}
+dependencies {
+   providedRuntime 'dom4j:dom4j:1.6.1'
+   providedRuntime 'org.javassist:javassist:3.15.0-GA'
+   providedRuntime 'org.jboss.logging:jboss-logging:3.1.0.GA'
+   providedRuntime 'org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final'
+   providedRuntime 'org.antlr:antlr-complete:3.5.2'
+   providedRuntime 'org.antlr:antlr-runtime:3.5'
+   providedRuntime 'org.bouncycastle:bcprov-jdk15:1.45'
+   providedRuntime 'com.mchange:c3p0:0.9.2.1'
+   providedRuntime 'commons-cli:commons-cli:1.2'
+   providedRuntime 'commons-codec:commons-codec:1.6'
+   providedRuntime 'commons-fileupload:commons-fileupload:1.2'
+   providedRuntime 'commons-httpclient:commons-httpclient:3.0.1'
+   providedRuntime 'commons-io:commons-io:1.4'
+   providedRuntime 'commons-logging:commons-logging:1.1.1'
+   providedRuntime 'commons-logging:commons-logging-api:1.0.4'
+   providedRuntime 'org.apache.geronimo.javamail:geronimo-javamail_1.4_mail:1.8.1'
+   providedRuntime 'org.apache.geronimo.javamail:geronimo-javamail_1.4_provider:1.8.1'
+   providedRuntime 'com.google.code.gson:gson:2.0'
+   providedRuntime 'org.hamcrest:hamcrest-all:1.1'
+   providedRuntime 'org.hibernate:hibernate-c3p0:4.1.10.Final'
+   providedRuntime 'org.hibernate.common:hibernate-commons-annotations:4.0.1.Final'
+   providedRuntime 'org.hibernate:hibernate-core:4.1.10.Final'
+   providedRuntime 'org.hibernate:hibernate-entitymanager:4.1.10.Final'
+   //@ColumnResult type属性需要
+   providedRuntime 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+   providedRuntime 'org.apache.httpcomponents:httpclient:4.1.2'
+   providedRuntime 'org.apache.httpcomponents:httpcore:4.1.2'
+   //json-simple
+   providedRuntime 'org.json.simple:json_simple:1.1'
+   providedRuntime 'junit:junit:4.11'
+   providedRuntime 'ch.qos.logback:logback-classic:1.0.13'
+   providedRuntime 'ch.qos.logback:logback-core:1.0.13'
+   providedRuntime 'com.mazu:mazu:2.0.0'
+   providedRuntime 'com.mchange:mchange-commons-java:0.2.3.4'
+   //mysql-connector-java-5.1.22-bin 无bin
+   providedRuntime 'mysql:mysql-connector-java:5.1.29'
+   providedRuntime 'org.eclipse.jgit:org.eclipse.jgit:2.2.0.201212191850-r'
+   //pdfjet-4.75
+   providedRuntime 'com.hynnet:pdfjet:5.75'
+   providedRuntime 'org.apache.poi:poi:3.10.1'
+   providedRuntime 'org.apache.poi:poi-examples:3.10.1'
+   providedRuntime 'org.apache.poi:poi-excelant:3.10.1'
+   providedRuntime 'org.apache.poi:poi-ooxml-schemas:3.10.1'
+   providedRuntime 'org.apache.poi:poi-scratchpad:3.10.1'
+   providedRuntime 'org.slf4j:slf4j-api:1.6.4'
+   providedRuntime 'org.slf4j:slf4j-simple:1.6.4'
+   providedRuntime 'edu.vt.middleware:vt-crypt:2.1.4'
+   providedRuntime 'edu.vt.middleware:vt-dictionary:3.0'
+   providedRuntime 'edu.vt.middleware:vt-password:3.1.1'
+   providedRuntime 'org.apache.xmlbeans:xmlbeans:2.6.0'
+   providedRuntime 'javax.servlet:servlet-api:3.1.0'
+   
+   
+   providedCompile 'dom4j:dom4j:1.6.1'
+   providedCompile 'org.javassist:javassist:3.15.0-GA'
+   providedCompile 'org.jboss.logging:jboss-logging:3.1.0.GA'
+   providedCompile 'org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final'
+   providedCompile 'org.antlr:antlr-complete:3.5.2'
+   providedCompile 'org.antlr:antlr-runtime:3.5'
+   providedCompile 'org.bouncycastle:bcprov-jdk15:1.45'
+   providedCompile 'com.mchange:c3p0:0.9.2.1'
+   providedCompile 'commons-cli:commons-cli:1.2'
+   providedCompile 'commons-codec:commons-codec:1.6'
+   providedCompile 'commons-fileupload:commons-fileupload:1.2'
+   providedCompile 'commons-httpclient:commons-httpclient:3.0.1'
+   providedCompile 'commons-io:commons-io:1.4'
+   providedCompile 'commons-logging:commons-logging:1.1.1'
+   providedCompile 'commons-logging:commons-logging-api:1.0.4'
+   providedCompile 'org.apache.geronimo.javamail:geronimo-javamail_1.4_mail:1.8.1'
+   providedCompile 'org.apache.geronimo.javamail:geronimo-javamail_1.4_provider:1.8.1'
+   providedCompile 'com.google.code.gson:gson:2.0'
+   providedCompile 'org.hamcrest:hamcrest-all:1.1'
+   providedCompile 'org.hibernate:hibernate-c3p0:4.1.10.Final'
+   providedCompile 'org.hibernate.common:hibernate-commons-annotations:4.0.1.Final'
+   providedCompile 'org.hibernate:hibernate-core:4.1.10.Final'
+   providedCompile 'org.hibernate:hibernate-entitymanager:4.1.10.Final'
+   //@ColumnResult属性需要
+   providedCompile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+   providedCompile 'org.apache.httpcomponents:httpclient:4.1.2'
+   providedCompile 'org.apache.httpcomponents:httpcore:4.1.2'
+   //json-simple
+   providedCompile 'org.json.simple:json_simple:1.1'
+   providedCompile 'junit:junit:4.11'
+   providedCompile 'ch.qos.logback:logback-classic:1.0.13'
+   providedCompile 'ch.qos.logback:logback-core:1.0.13'
+   providedCompile 'com.mazu:mazu:2.0.0'
+   providedCompile 'com.mchange:mchange-commons-java:0.2.3.4'
+   //mysql-connector-java-5.1.22-bin 无bin
+   providedCompile 'mysql:mysql-connector-java:5.1.29'
+   providedCompile 'org.eclipse.jgit:org.eclipse.jgit:2.2.0.201212191850-r'
+   //pdfjet-4.75没有
+   providedCompile 'com.hynnet:pdfjet:5.75'
+   providedCompile 'org.apache.poi:poi:3.10.1'
+   providedCompile 'org.apache.poi:poi-examples:3.10.1'
+   providedCompile 'org.apache.poi:poi-excelant:3.10.1'
+   providedCompile 'org.apache.poi:poi-ooxml-schemas:3.10.1'
+   providedCompile 'org.apache.poi:poi-scratchpad:3.10.1'
+   providedCompile 'org.slf4j:slf4j-api:1.6.4'
+   providedCompile 'org.slf4j:slf4j-simple:1.6.4'
+   providedCompile 'edu.vt.middleware:vt-crypt:2.1.4'
+   providedCompile 'edu.vt.middleware:vt-dictionary:3.0'
+   providedCompile 'edu.vt.middleware:vt-password:3.1.1'
+   providedCompile 'org.apache.xmlbeans:xmlbeans:2.6.0'
+   providedCompile 'javax.servlet:servlet-api:3.1.0'
+}
+task tomcatLIB(type: Copy) {
+	from configurations.runtime
+	into '../enite/WebContent/WEB-INF/lib'
+}

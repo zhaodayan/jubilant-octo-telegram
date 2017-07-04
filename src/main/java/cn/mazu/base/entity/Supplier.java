@@ -9,6 +9,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import cn.mazu.annotation.DisplayField;
+import cn.mazu.annotation.FilterField;
 import cn.mazu.util.EntityObject;
 //基础数据--供应商管理
 @Entity
@@ -16,6 +17,7 @@ import cn.mazu.util.EntityObject;
 public class Supplier extends EntityObject {
    @DisplayField(cname="",etag=0)
    public String seqno = "";
+   @FilterField(fname="名称",o2fname="name")
    @DisplayField(cname="供方名称",etag=1)
    public String name = "";
    @DisplayField(cname="联系人",etag=2)

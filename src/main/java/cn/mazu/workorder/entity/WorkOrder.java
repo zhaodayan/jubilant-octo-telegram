@@ -35,7 +35,7 @@ public class WorkOrder extends EntityObject{
 	@FilterField(fname="品名",o2fname="name")
 	@DisplayField(cname="品名",etag=2)
     public String name = "";//品名
-	//@FilterField(fname="客户名称")
+	@FilterField(fname="客户名称",o2fname="client.name")
 	@DisplayField(cname="客户名称",etag=3)
     //public String companyName = "";//客户名称
 	public Client client;
@@ -55,6 +55,7 @@ public class WorkOrder extends EntityObject{
     public Date shipDate ;//出货日期
 	@DisplayField(cname="图面",etag=11)
 	public Surface surface;//图面
+	@FilterField(fname="状态",o2fname="wostatus",widgetname="select")
 	@DisplayField(cname="状态",etag=13)
 	public WorkOrderStatus wostatus = WorkOrderStatus.ACTIVATED;
 	@DisplayField(cname="组装日期",etag=15)

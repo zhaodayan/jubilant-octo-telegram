@@ -71,7 +71,7 @@ public class MiddleTpl extends HtmlTemplate {
 	private DecimalFormat decimalF = new DecimalFormat("#0.##");
 	
 	//筛选
-	private Template filterTpl;
+	protected Template filterTpl;
 	//private ComboBox/*ComboBox fieldSel = new ComboBox(),*/operatorSel = new ComboBox();
 	//private StringListModel /*fieldModel = new StringListModel(),*/operatorModel = new StringListModel();
 	//private FormWidget inputval1,inputval2;
@@ -389,12 +389,13 @@ public class MiddleTpl extends HtmlTemplate {
 		filterText+="<div style='clear:both;'></div></ul>";
 		filterText+="<div class='butbox'>${queryBtn}${resetBtn}</div></div>";
 		filterTpl.setTemplateText(filterText, TextFormat.XHTMLUnsafeText);
-		for (Field filterField:filterFieldList){
+		bindFilterWidget(filterTpl,filterFieldList);
+		/*for (Field filterField:filterFieldList){
 			LineEdit le = new LineEdit("");
 			FilterField ff = (FilterField)filterField.getAnnotation(FilterField.class);
 			filterTpl.bindString(ff.fname(),ff.fname());
 			filterTpl.bindWidget(ff.fname()+"inputVal", le);
-		}
+		}*/
 		PushButton resetBtn = new PushButton(tr("reset"));
 		PushButton queryBtn = new PushButton(tr("query"));
 		resetBtn.setStyleClass("btn-warning");
@@ -445,6 +446,16 @@ public class MiddleTpl extends HtmlTemplate {
 		filterTpl.bindWidget("queryBtn", queryBtn);
 		return filterTpl;
 	}
+	//绑定过滤组件
+	protected void bindFilterWidget(Template filterTpl2, List<Field> filterFieldList2) {
+		for (Field filterField:getFilterFieldList()){
+			LineEdit le = new LineEdit("");
+			FilterField ff = (FilterField)filterField.getAnnotation(FilterField.class);
+			filterTpl.bindString(ff.fname(),ff.fname());
+			filterTpl.bindWidget(ff.fname()+"inputVal", le);
+		}
+	}
+
 	public void doFilterClick(){
 		this.start_ = 0;
 		drawGrid();

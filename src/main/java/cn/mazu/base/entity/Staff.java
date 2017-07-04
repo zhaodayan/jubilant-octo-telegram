@@ -12,6 +12,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import cn.mazu.annotation.DisplayField;
+import cn.mazu.annotation.FilterField;
 import cn.mazu.util.EntityObject;
 import cn.mazu.util.Util.UserGender;
 @Entity
@@ -19,6 +20,7 @@ import cn.mazu.util.Util.UserGender;
 public class Staff extends EntityObject {
 	@DisplayField(cname="",etag=0)
 	public String seqno = "";
+	@FilterField(fname="姓名",o2fname="name")
 	@DisplayField(cname="姓名",etag=1)
     public String name = "";
 	@DisplayField(cname="身份证号码",etag=4)

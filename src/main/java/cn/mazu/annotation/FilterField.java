@@ -12,4 +12,5 @@ public @interface FilterField {
 	public abstract String fname();//查询条件名称
 	//public abstract String oname();//操作名称，equal，like,between
 	public abstract String o2fname() default "";//若是对象字段，要转换成的名称
+	public abstract String widgetname() default "lineedit";//组件类型，默认是文本输入框
 }

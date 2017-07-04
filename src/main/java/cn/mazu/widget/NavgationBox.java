@@ -18,7 +18,7 @@ public class NavgationBox extends HtmlTemplate {
 		this.container = parent;
 		String text =
  "" +
-"<div class=\"copyright\">益耐特生产管理系统 V1.0  © 2014/8/1  服务热线：0512-57868316</div>"/*+
+"<div class=\"copyright\">某生产管理系统 V1.0  © 2014/8/1  服务热线：0512-57868316</div>"/*+
 "<div  id=\"p-tools\" class=\"search_all\">"+
  " <div class=\"search_textbox\"><input type=\"text\" class=\"textbox_style\" value=\"请输入关键字\"/></div>"+
 "  <div class=\"search_button\"><input name=\"\" type=\"button\" class=\"button_style\"/></div>"+

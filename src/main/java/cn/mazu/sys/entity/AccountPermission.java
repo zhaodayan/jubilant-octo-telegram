@@ -12,7 +12,7 @@ import cn.mazu.annotation.DisplayField;
 import cn.mazu.annotation.FilterField;
 import cn.mazu.base.entity.Staff;
 import cn.mazu.util.EntityObject;
-@Entity
+@Entity 
 @Table(name="account_permission")
 public class AccountPermission extends EntityObject{
 	@DisplayField(cname="",etag=0)
@@ -67,14 +67,14 @@ public class AccountPermission extends EntityObject{
 	public void setStaff(Staff staff) {
 		this.staff = staff;
 	}
-	@Lob
+	//@Lob
 	public String getMenuStr() {
 		return menuStr;
 	}
 	public void setMenuStr(String menuStr) {
 		this.menuStr = menuStr;
 	}
-	@Lob
+	//@Lob
 	public String getMenuPermission() {
 		return menuPermission;
 	}

@@ -51,8 +51,10 @@ import cn.mazu.widget.kit.Link;
 import cn.mazu.widget.kit.web.form.CheckBox;
 import cn.mazu.widget.kit.web.form.ComboBox;
 import cn.mazu.widget.kit.web.form.DateEdit;
+import cn.mazu.widget.kit.web.form.FormWidget;
 import cn.mazu.widget.kit.web.form.LineEdit;
 import cn.mazu.widget.kit.web.form.PushButton;
+import cn.mazu.widget.kit.web.form.SelectionBox;
 import cn.mazu.widget.kit.web.form.TextArea;
 import cn.mazu.widget.kit.web.interact.Template;
 import cn.mazu.widget.kit.web.interact.Text;
@@ -83,7 +85,7 @@ public class WorkOrderMgr extends MiddleTpl {
 	private List<String> detailFilterParamList = new ArrayList<String>();
 	private AccountPermission ap ;
 	private List<Widget> disabledW = new ArrayList<Widget>();
-	private Template winOuter/* = new Template()*/,win1Outer,filterTpl,detailFilterTpl/* = new Template()*/;
+	private Template winOuter/* = new Template()*/,win1Outer,detailFilterTpl/* = new Template()*/;
 	private Widget detailTraceHead,detailTraceBody;
 	private DecimalFormat df = new DecimalFormat(".##");
 	private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -1351,5 +1353,23 @@ public class WorkOrderMgr extends MiddleTpl {
 			return  previousStartCol + Integer.valueOf(dfAnno.colspan());
 		}else
 			return 0;
+	}
+	
+	@Override
+	protected void bindFilterWidget(Template filterTpl2, List<Field> filterFieldList2){
+		for (Field filterField:getFilterFieldList()){
+			//LineEdit le = new LineEdit("");
+			FormWidget w = null;
+			FilterField ff = (FilterField)filterField.getAnnotation(FilterField.class);
+			if(ff.widgetname().equals("lineedit")){
+				w = new LineEdit();
+			}else if(ff.widgetname().equals("select")){
+				w = WidgetUtil.initSelFromEnum(WorkOrderStatus.class);
+				
+			}
+			filterTpl.bindString(ff.fname(),ff.fname());
+			filterTpl.bindWidget(ff.fname()+"inputVal", w);
+		}
+		//super.bindFilterWidget(filterTpl2, filterFieldList2);
 	}
 }

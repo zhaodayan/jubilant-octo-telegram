@@ -360,14 +360,14 @@ public class Util {
 	    	CONTACTINFO("Contactinfo","联系我们",8,FRONTMT,"setting"),
 	    	
 	    	BASEDATAMAN("BasedataMgr","基础数据管理",9,null,""),
-	    	CLIENTMAN("ClientMgr","客户管理",10,BASEDATAMAN,"create,edit,delete,view,usedc"),
-	    	SUPPLIERMAN("SupplierMgr","供应商管理",11,BASEDATAMAN,"create,edit,delete,view,usedc"),
-	    	SERVERMAN("StaffMgr","员工管理",12,BASEDATAMAN,"create,edit,delete,view,usedc"),
+	    	CLIENTMAN("ClientMgr","客户管理",10,BASEDATAMAN,"create,edit,delete,view,usedc,filtrate"),
+	    	SUPPLIERMAN("SupplierMgr","供应商管理",11,BASEDATAMAN,"create,edit,delete,view,usedc,filtrate"),
+	    	SERVERMAN("StaffMgr","员工管理",12,BASEDATAMAN,"create,edit,delete,view,usedc,filtrate"),
 	    	DEPTMAN("DeptMgr","部门管理",13,BASEDATAMAN,"create,edit,delete,view,usedc"),
 	    	FILETMAN("GeneralElementMgr","零件通用字典",14,BASEDATAMAN,"create,edit,delete,view,usedc"),
 	    	
 	    	CONTRACTMAN("ContractMgr","合同管理",15,null,""),
-	        SALECONTRACT("SaleDocMgr","销售合同",16,CONTRACTMAN,"create,edit,delete,view,usedc"),
+	        SALECONTRACT("SaleDocMgr","销售合同",16,CONTRACTMAN,"create,edit,delete,view,usedc,filtrate"),
 	    	BUYCONTRACT("BuyDocMgr","采购合同",17,CONTRACTMAN,"create,edit,delete,view,export,filtrate,usedc"),
 	    	
 	    	

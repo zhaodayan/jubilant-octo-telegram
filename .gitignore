@@ -1,0 +1,10 @@
+/build/
+/.gradle
+/.settings
+/bin
+/build
+/repos
+.classpath
+.project
+/src/main/java/META-INF/
+/WebContent/WEB-INF/lib

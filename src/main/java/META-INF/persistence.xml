@@ -11,7 +11,11 @@
             <property name="hibernate.connection.driver_class" value="org.gjt.mm.mysql.Driver" />
             <property name="hibernate.connection.username" value="root" />
             <property name="hibernate.connection.password" value="1111" />
+<<<<<<< HEAD
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/enite?useUnicode=true&amp;characterEncoding=UTF-8" />
+=======
+            <property name="hibernate.connection.url" value="jdbc:mysql://192.169.1.27:3306/enite?useUnicode=true&amp;characterEncoding=UTF-8" />
+>>>>>>> branch 'master' of http://jzhao@www.smallelf.com/r/enite.git
             <property name="hibernate.max_fetch_depth" value="3" />
             <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
             <property name="hibernate.hbm2ddl.auto" value="update" />
